@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbita - Pase Estelar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- BARRA DE NAVEGACIÓN SUPERIOR -->
+  <header class="barra-navegacion">
+    <div class="logo-orbita">
+      <span>⬡</span> Orbita
+    </div>
+    <div class="acciones-usuario">
+      <button class="boton-menu">Inicio ▾</button>
+      <div class="avatar-usuario">VIP</div>
+    </div>
+  </header>
+
+  <!-- BANNER DORADO EN MOVIMIENTO (DISPARADOR) -->
+  <div class="contenedor-banner" id="boton-abrir-pase" title="Tocá para ver los beneficios">
+    <div class="contenido-banner">
+      <span class="destello">✦</span>
+      <span class="etiqueta-vip">PASE ESTELAR</span>
+      <span>¡PRUEBA GRATIS POR 3 MESES!</span>
+      <span class="destello">✨</span>
+      <span>TOCÁ ACÁ PARA DESBLOQUEAR TODO</span>
+      <span class="destello">✦</span>
+    </div>
+  </div>
+
+  <!-- MURO DE PRUEBA -->
+  <main class="muro-principal">
+    <div class="saludo-usuario">
+      <h2>Hola, Explorador/a</h2>
+      <p>Movete por la pantalla o bajá por el muro, y miralo sonreír.</p>
+    </div>
+
+    <div class="tarjeta-publicacion">
+      ¿Qué estás pensando hoy?
+    </div>
+  </main>
+
+  <!-- MODAL / CARTEL FLOTANTE -->
+  <div class="fondo-oscuro" id="fondo-modal">
+    <div class="tarjeta-pase">
+      <button class="boton-cerrar" id="boton-cerrar">✕</button>
+
+      <h3 class="titulo-dorado">PRUEBA GRATIS POR 3 MESES</h3>
+      <p class="subtitulo-promo">¡DESBLOQUEÁ EL UNIVERSO ÓRBITA!</p>
+
+      <!-- Selector de temas interactivo -->
+      <div class="caja-previsualizacion">
+        <div class="selector-temas">
+          <button class="boton-tema activo" data-tema="oro">Pase Oro</button>
+          <button class="boton-tema" data-tema="ciberpunk">Ciberpunk</button>
+          <button class="boton-tema" data-tema="retro">Neón Retro</button>
+        </div>
+
+        <div class="tarjeta-perfil-prueba tema-oro" id="tarjeta-perfil">
+          <div class="circulo-avatar">VIP</div>
+          <div class="datos-perfil">
+            <h5>Tu Perfil (Órbita VIP)</h5>
+            <span id="titulo-cancion">Sonando: Gustavo Cerati - Puente</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lista de beneficios -->
+      <div class="lista-beneficios">
+        <div class="fila-beneficio">
+          <div class="icono-beneficio">🎨</div>
+          <div class="texto-beneficio">
+            <h4>Personalización Total del Perfil</h4>
+            <p>Fondos dinámicos, fuentes retro y estilos exclusivos.</p>
+          </div>
+        </div>
+
+        <div class="fila-beneficio">
+          <div class="icono-beneficio">🎵</div>
+          <div class="texto-beneficio">
+            <h4>Banda Sonora en tu Perfil</h4>
+            <p>Elegí tu canción favorita para que suene al visitarte.</p>
+          </div>
+        </div>
+
+        <div class="fila-beneficio">
+          <div class="icono-beneficio">🎙️</div>
+          <div class="texto-beneficio">
+            <h4>Voz sin Límites y Moduladores</h4>
+            <p>Audios de 60 segundos con efectos futuristas.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botón de acción -->
+      <button class="boton-activar" id="boton-confirmar">
+        ¡OBTENÉ TU PRUEBA GRATIS AHORA!
+      </button>
+
+      <p class="terminos-condiciones">*Cancelá cuando quieras. Sin cargos durante los primeros 90 días.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
